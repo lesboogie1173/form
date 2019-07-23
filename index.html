@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2 class="content-head is-center">Contact Us!</h2>
+  <aside>
+       <p>
+           We would <em>love</em> to hear from you! </p>
+           <p>Please use the <b><em>Contact Form</em></b>
+           to send us a message.
+       </p>
+   </aside>
+
+<!-- START HERE -->
+   
+
+  <form class="gform pure-form pure-form-stacked" method="POST"
+  action="https://docs.google.com/forms/d/e/1FAIpQLScKMvVE0Gj61_aqlLmkVkq2_2G4pK9BvP9AGaYSoCIr0aMS2g/formResponse">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input type="text"   id="name" name="entry.1437155652" required placeholder="Your Name" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Phone Number: </label>
+        <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
+        <input id="message" type="number" name="entry.1496122993"  required placeholder="01789">
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="entry.1066480715" type="email"
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+      <fieldset class="pure-group">
+          <label for="color">City: </label>
+          <!--<input type="text" id="color" name="entry.635558552" placeholder="O+" />
+          <input type="radio" name="entry.1120568242" value="Barishal"> Barishal<br>
+          <input type="radio" name="entry.1120568242" value="Chittagong"> Chittagong<br>
+          <input type="radio" name="entry.1120568242" value="Dhaka"> Dhaka<br>
+          <input type="radio" name="entry.1120568242" value="Khulna"> Khulna<br>
+          <input type="radio" name="entry.1120568242" value="Mymensingh"> Mymensingh<br>
+          <input type="radio" name="entry.1120568242" value="Rajshahi"> Rajshahi<br>
+          <input type="radio" name="entry.1120568242" value="Rangpur"> Rangpur<br>
+          <input type="radio" name="entry.1120568242" value="Sylhet"> Sylhet<br> -->
+          <select  name="entry.1120568242">
+						<option value="Barishal">Barishal</option>
+						<option value="Chittagong">Chittagong</option>
+						<option value="Dhaka">Dhaka</option>
+						<option value="Khulna">Khulna</option>
+						<option value="Mymensingh">Mymensingh</option>
+						<option value="Rajshahi">Rajshahi</option>
+						<option value="Rangpur">Rangpur</option>
+						<option value="Sylhet">Sylhet</option>
+					  </select>
+          
+          
+        </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="color">Blood Group: </label>
+        <!--<input type="text" id="color" name="entry.635558552" placeholder="O+" />
+        <input type="radio" name="entry.635558552" value="A +"> A +<br>
+        <input type="radio" name="entry.635558552" value="A -"> A -<br>
+        <input type="radio" name="entry.635558552" value="B +"> B +<br>
+        <input type="radio" name="entry.635558552" value="B -"> B -<br>
+        <input type="radio" name="entry.635558552" value="AB +"> AB +<br>
+        <input type="radio" name="entry.635558552" value="AB -"> AB -<br>
+        <input type="radio" name="entry.635558552" value="O +"> O +<br>
+        <input type="radio" name="entry.635558552" value="O -"> O -<br> -->
+        <select  name="entry.635558552">
+          <option value="A +">A +</option>
+          <option value="A -">A -</option>
+          <option value="B +">B +</option>
+          <option value="B -">B -</option>
+          <option value="AB +">AB +</option>
+          <option value="AB -">AB -</option>
+          <option value="O +">O +</option>
+          <option value="O -">O -</option>
+          </select>
+        
+        
+      </fieldset>
+      
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+
+</body>
+</html>
