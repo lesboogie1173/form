@@ -7,40 +7,117 @@
   <title>Contact Form</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      </head>
    <!-- Style The Contact Form How Ever You Prefer -->
    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h2 class="content-head is-center">Contact Us!</h2>
+    <div class="container2">
+        <div class="logo">
+            <a href="index.html">
+          <img src="paperss.png" alt="" width="130"/> </a>
+          </div>
+        <nav>
+          <ul>
+            <a href="index.html">
+          <li class="navlink1">Contact US</li> </a>
+          </ul>
+          </nav>
+        </div>
+        <hr />
   <aside>
-       <p>
-           We would <em>love</em> to hear from you! </p>
-           <p>Please use the <b><em>Contact Form</em></b>
-           to send us a message.
-       </p>
+       <p><em>PAPER CHASERS TALENT AGENCY</em></p>
+           
+           <p>ARTIST <b>SUBMISSION FORM.</b></p>
+       
    </aside>
 
 <!-- START HERE -->
    
 
   <form class="gform pure-form pure-form-stacked" method="POST"
-  action="https://docs.google.com/forms/d/e/1FAIpQLScKMvVE0Gj61_aqlLmkVkq2_2G4pK9BvP9AGaYSoCIr0aMS2g/formResponse">
+  action="https://script.google.com/macros/s/AKfycbw9Payo6Xx3HaEphSxVhHpmk7b2QMqg9jnctv8Few/exec">
     <!-- change the form action to your script url -->
 
     <div class="form-elements">
       <fieldset class="pure-group">
-        <label for="name">Name: </label>
-        <input type="text"   id="name" name="entry.1437155652" required placeholder="Your Name" />
+        <label for="name">Artist / Band name :</label>
+        <input type="text"   id="name" name="Artist / Band name :" required placeholder="Name" />
       </fieldset>
 
       <fieldset class="pure-group">
-        <label for="message">Phone Number: </label>
+        <label for="email">Email Address :</label>
         <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
-        <input id="message" type="number" name="entry.1496122993"  required placeholder="01789">
+        <input id="email" type="email" name="Email Address :"  required placeholder="example@gmail.com">
       </fieldset>
 
+      <script>
+        $(function(){
+         $('input[type="url"]').on('blur', function(){
+           var string = $(this).val();
+           if (!string.match(/^https?:/) && string.length) {
+             string = "http://" + string;
+              $(this).val(string)
+           }
+              });
+           });
+      
+      </script>
       <fieldset class="pure-group">
+        <label for="Instragram">Facebook Link :</label>
+        <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
+        <input id="link" type="url" name="Facebook Link :"  required placeholder="https://www.facebook.com/facebook">
+      </fieldset>
+      <fieldset class="pure-group">
+          <label for="Instragram">Twitter Link :</label>
+          <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
+          <input id="link" type="url" name="Twitter Link :"  required placeholder="https://twitter.com/twitter">
+      </fieldset>
+      <fieldset class="pure-group">
+          <label for="Instragram">Instragram Link :</label>
+          <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
+          <input id="link" type="url" name="Instragram Link :"  required placeholder="https://www.instagram.com/instragram/">
+      </fieldset>
+      <fieldset class="pure-group">
+          <label for="Instragram">Youtube Link :</label>
+          <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
+          <input id="link" type="url" name="Youtube Link :"  required placeholder="https://www.youtube.com/youtube">
+        </fieldset>
+        <fieldset class="pure-group">
+            <label for="Instragram">Photos Link :</label>
+            <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
+            <input id="link" type="url" name="Photos Link :"  required placeholder="https://drive.google.com/file/d/1zKRbNpcMGhafy2KjFRbvQGzkqsQkR2WM/view?usp=sharing">
+          </fieldset>
+          <fieldset class="pure-group">
+              <label for="Instragram">Video Link :</label>
+              <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
+              <input id="link" type="url" name="Video Link :"  required placeholder="https://drive.google.com/file/d/1zKRbNpcMGhafy2KjFRbvQGzkqsQkR2WM/view?usp=sharing">
+            </fieldset>
+            <fieldset class="pure-group">
+                <label for="Instragram">Audio Link :</label>
+                <!--<input id="message" name="entry.1496122993" placeholder="+880" /> -->
+                <input id="link" type="url" name="Audio Link :"  required placeholder="https://drive.google.com/file/d/1zKRbNpcMGhafy2KjFRbvQGzkqsQkR2WM/view?usp=sharing">
+              </fieldset>
+              <fieldset class="pure-group">
+                  <label for="Instragram">Website Link :</label>
+                  <!--<input id="message" name="entry.1496122993" placeholder="example.com" /> -->
+                  <input id="link" type="url" name="Website Link :"  required placeholder="example.com">
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="name">Bio :</label>
+                    <input type="text"   id="name" name="Bio :" required placeholder="Bio" />
+                  </fieldset>
+                  <fieldset class="pure-group">
+                      <label for="name">Contact Information :</label>
+                      <input type="text"   id="name" name="Contact Information :" required placeholder="Contact Information" />
+                    </fieldset>
+
+
+      <!--<fieldset class="pure-group">
         <label for="email"><em>Your</em> Email Address:</label>
         <input id="email" name="entry.1066480715" type="email"
         required placeholder="your.name@email.com"/>
@@ -55,7 +132,7 @@
           <input type="radio" name="entry.1120568242" value="Mymensingh"> Mymensingh<br>
           <input type="radio" name="entry.1120568242" value="Rajshahi"> Rajshahi<br>
           <input type="radio" name="entry.1120568242" value="Rangpur"> Rangpur<br>
-          <input type="radio" name="entry.1120568242" value="Sylhet"> Sylhet<br> -->
+          <input type="radio" name="entry.1120568242" value="Sylhet"> Sylhet<br> 
           <select  name="entry.1120568242">
 						<option value="Barishal">Barishal</option>
 						<option value="Chittagong">Chittagong</option>
@@ -80,7 +157,7 @@
         <input type="radio" name="entry.635558552" value="AB +"> AB +<br>
         <input type="radio" name="entry.635558552" value="AB -"> AB -<br>
         <input type="radio" name="entry.635558552" value="O +"> O +<br>
-        <input type="radio" name="entry.635558552" value="O -"> O -<br> -->
+        <input type="radio" name="entry.635558552" value="O -"> O -<br> 
         <select  name="entry.635558552">
           <option value="A +">A +</option>
           <option value="A -">A -</option>
@@ -93,7 +170,7 @@
           </select>
         
         
-      </fieldset>
+      </fieldset> -->
       
 
       <fieldset class="pure-group honeypot-field">
@@ -109,6 +186,7 @@
     <div class="thankyou_message" style="display:none;">
       <h2><em>Thanks</em> for contacting us!
         We will get back to you soon!</h2>
+        <input id="inp" type="button" value="Send Message Agian" onclick="location.href='index.html';" />
     </div>
 
   </form>

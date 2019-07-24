@@ -1,0 +1,88 @@
+body {
+  margin: 2em;
+  width: 100%;
+	max-width: 1024px; /* or whatever width you want */
+	margin-right: auto;
+	margin-left: auto;
+}
+aside {
+    background: #1f8dd6; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
+    margin: 2em;
+}
+form {
+	margin: 2em;
+	margin-bottom: 8em;
+}
+textarea {
+  width: 100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
+}
+.button-xlarge {
+  font-size: 125%;
+  width: 100%;
+}
+button {
+  float: right;
+}
+#name, #email, #text, #media, #link {
+  width: 100%;
+}
+#inp {
+	width: 100%;
+	margin-top: 3em;
+	font-size: 130%;
+	background-color: #00800082;
+	color: white;
+	
+} 
+
+.honeypot-field {
+  display: none;
+}
+::placeholder {
+  color: #99999978;
+  opacity: 1; /* Firefox */
+}
+
+.container2{
+  clear:both;
+  overflow:auto;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+nav{float:right;}
+
+.logo img{float:left;}
+
+ul li{
+  display: inline-block; padding:10px;
+  font-size:20px; font-family:raleway;
+}
+
+ul li:hover{
+  color:#1cb841;
+  
+}
+hr {
+    margin-left: 2em;
+    margin-right: 2em; }
+	
